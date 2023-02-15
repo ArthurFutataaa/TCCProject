@@ -1,0 +1,24 @@
+.formulario{
+    width: 700px;
+    margin-top: 25vh;
+    margin-left: 63vh;
+    border: 3px solid rgba(153, 151, 151, 0.877);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 5px 2px rgba(126, 125, 125, 0.877);
+    
+}
+
+.botao{
+    background-color: #3b6cf3;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.botao:hover {opacity: 1;}

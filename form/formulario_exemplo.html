@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario_exemplo.css" class="rel">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Form</title>
+</head>
+<body>
+    <form class="formulario">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEquip">Nome do Equipamento:</label>
+            <input type="text" class="form-control" id="EQUIP" placeholder="Insira o equipamento">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputCodigo">Codigo do Equipamento</label>
+            <input type="text" class="form-control" id="CODIGO" placeholder="Insira o Codigo do equipamento">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputDesc">Descrição do Equipamento</label>
+          <textarea type="text" class="form-control" id="DESCRICAO" placeholder="Insira a descrição do equipamento"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="inputSala">Digite a Sala do Equipamento:</label>
+          <input type="number" class="form-control" id="SALA" placeholder="Insira o número da sala (Apenas números)">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputDate">Data da última revisão</label>
+            <input type="date" class="form-control" id="DATA">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputCat">Categorias </label>
+            <select id="CATEGORIA" class="form-control">
+              <option selected>Escolher...</option>
+              <option></option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputID">ID</label>
+            <input type="number" class="form-control" id="ID" readonly>
+          </div>
+        </div>
+        <button type="submit" class="btn botao">Cadastrar</button>
+      </form>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
