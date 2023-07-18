@@ -1,0 +1,121 @@
+
+
+* {
+    margin: 0; /* Margem */
+    padding: 0; /* Margem interna */
+    box-sizing: border-box; /* Tamanho da caixa */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Fontes escolhidas */
+}
+
+
+/* Body */
+body{
+    background-color: rgb(255, 255, 255);
+    /* cor das tabelas rgb(245, 198, 141) */
+}
+
+/* Navbar */
+nav.menu-lateral{
+    width: 85px; /* Largura sidebar (Fechada) */
+    height: 100vh; /* Tamanho sidebar  */
+    background-color: #202020; /* Cor sidebar*/
+    padding: 40px 0 40px 1%; /* Margem interna */
+    box-shadow: 5px 0 0 #8A4921; /* Linha colorida ao lado da sidebar */
+
+    /* Fixar a sidebar na tela */
+    position: fixed; /* Posição fixa */
+    top: 0; /* Topo */
+    left: 0;/* Abaixo */
+    overflow: hidden; /* Esconder o excesso */
+    transition: .5s; /* Transição (deixar suavizado) */
+}
+
+/* Sidebar (Aberta) */
+nav.menu-lateral.expandir{ 
+    width: 300px;
+}
+
+/* Quando a sidebar encolher */
+.btn-expandir{
+    width: 100vh; /* Largura sidebar */
+    padding-left: 10px; /* Margem interna */
+}
+
+/* Icone Burguer */
+.btn-expandir > i{ 
+    color: #fff; /* Cor do icone */
+    font-size: 30px; /* Tamanho do icone */
+    cursor: pointer; /* Deixar o icone clicável (Indicar ao usuário) */
+}
+
+/* Outros Icones */
+ul{
+    height: 100vh; /* Tamanho */
+    list-style-type: none; /* Tirando o estilo da lista */
+}
+
+/* Sauvizar transição do cursor entre os icones */
+ul li.item-menu{
+    transition: .2s; /* Transição */
+}
+
+/* Var ativo do JS */
+ul li.ativo{
+    background-color: #8A4921; /* Definindo cor quando ativo */
+}
+
+/* Sombreamento ao cursor ficar em cima do icone */
+ul li.item-menu:hover{ /* Hover = Posicionar o mouse em cima e mostrar que é clicável*/
+    background: #8A4921; /* Cor */
+}
+
+
+/* Estilizar os links dos icones da sidebar */
+ul li.item-menu a{
+    color: #fff; /* Cor do icone */
+    text-decoration: none; /* Sem o Sublime */
+    font-size: 20px; /* Tamanho da fonte */
+    padding: 20px 4%; /* Margem interna */
+    display: flex; /* Distância automatica */
+    margin-bottom: 20px; /* Mais distância */
+    line-height: 40px; /* Alinhamento ao icone */
+}
+
+/* Distância do texto ao icone */
+ul li.item-menu a .txt-link{
+    margin-left: 70px; /* Margem a esquerda */
+    transition: .5s; /* Transição */
+    opacity: 0; /* Opacidade */
+}
+
+/* Animação das letras */
+nav.menu-lateral.expandir .txt-link{
+    margin-left: 40px; /* Margem a esquerda */
+    opacity: 1; /* Opacidade */
+}
+
+/* Posicionar icones */
+ul li.item-menu a .icon > i{
+    font-size: 30px; /* Tamanho da fonte */
+    margin-left: 10px; /* Margem a esquerda */
+}
+
+/* Fim da Navbar */
+
+/* Jumbotron */
+
+.jumbotron {
+    background-image: url("../img/jumbotron-img.jpg"); /* Colocando uma imagem no fundo */
+    background-size: cover; /* Dimenciona a imagem, preservando sua proporção */
+    background-position:center; /* Posição do fundo */
+    background-repeat: no-repeat; /* Não repetir o fundo */
+    height: 100vh; /* Tamanho */
+    margin-top: 5px; /* Margem do topo */
+}
+
+/* Fim do Jumbotron */
+
+#content{
+    justify-content: right;
+}
+

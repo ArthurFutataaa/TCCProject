@@ -1,0 +1,171 @@
+<div class="container">
+    <div class="row mt-5">
+      <div class="col-12">
+  <link rel="stylesheet" href="../../../assets/css/list-equipamentos.css">
+  <link rel="stylesheet" href="../../../assets/css/bootstrap.css">
+  
+  
+       <!--- ínicio modal -->
+        <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="TituloModalCentralizado">Cadastre um usuário</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+  
+              <!--- ínicio form modal -->
+              <div class="modal-body">
+                <form class="formulario">
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputEquip">Nome </label>
+                      <input type="text" class="form-control" id="NOME" placeholder="Insira o equipamento">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputCodigo">Senha</label>
+                      <input type="text" class="form-control" id="SENHA" placeholder="Insira o Codigo do equipamento">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputDesc">Email</label>
+                    <input type="text" class="form-control" id="EMAIL" placeholder="Insira a descrição do equipamento">
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-2">
+                      <label for="inputID">ID</label>
+                      <input type="number" class="form-control" id="ID" readonly>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary">Salvar produto</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- fim form modal -->
+  
+      
+      <!--- Continuação da tabela -->
+      <div class="container">
+  
+        <!--- Botão Adicionar -->
+      <button type="button" class="add mr-0 btn bg-success" data-toggle="modal" data-target="#ExemploModalCentralizado" onclick="acao()"> Adicionar </button>
+          <table class="table table-bordered shadow"> 
+            
+            <!--- coluna principal -->
+              <thead>
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">NOME</th>
+                  <th scope="col">SENHA</th>
+                  <th scope="col">EMAIL</th>
+                  <th scope="col">AJUSTES</th>
+                </tr>
+              </thead>
+      
+      
+              <!--- Primeiro Coluna -->
+              <div>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Arthur</td>
+                  <td>4542399-44</td>
+                  <td>arthur.futata@etec.sp.gov.br </td>
+                  <div class=" item">
+      
+                    <!-- botão alterar -->
+                  <td><button type="button" class="edit btn bg-success" data-toggle="modal" data-target="#modalExemplo"> <img src="../../../assets/img/alterar.png" alt=""> 
+                  </button>
+      
+      
+                   <!-- Modal botão alterar -->
+                  <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Alterar</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="modal-body">
+                            <form class="formulario">
+                              <div class="form-row">
+                                <div class="form-group col-md-6">
+                                  <label for="inputEquip">Nome</label>
+                                  <input type="text" class="form-control" id="NOME" placeholder="Insira o equipamento">
+                                </div>
+                                <div class="form-group col-md-6">
+                                  <label for="inputCodigo">Senha</label>
+                                  <input type="text" class="form-control" id="SENHA" placeholder="Insira o Codigo do equipamento">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label for="inputDesc">Email</label>
+                                <textarea type="text" class="form-control" id="EMAIL" placeholder="Insira a descrição do equipamento"></textarea>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                          <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="button" class="excluir btn bg-danger"><img src="../../../assets/img/excluir.png" alt=""></button> 
+                  
+      
+      
+                            <!-- botão visualizar -->
+                <button type="button" class="visualizar btn btn-primary" data-toggle="modal" data-target="#modalExemplo1"> <img src="../../../assets/img/olho.png" alt=""></button>
+      
+                <!-- Modal visualizar -->
+                <div class="modal fade" id="modalExemplo1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Equipamento</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="modal-body">
+                          <form class="formulario">
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputEquip">Nome</label>
+                                <input type="text" class="form-control" id="NOME">
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label for="inputCodigo">Senha</label>
+                                <input type="text" class="form-control" id="SENHA">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label for="inputDesc">Email</label>
+                              <textarea type="text" class="form-control" id="EMAIL"></textarea>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </td>
+                  </div>
+                </tr>  
+              </div>
+            </div>
+              </div>
+                <script src="assets/js/bootstrap.js"></script>

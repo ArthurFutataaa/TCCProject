@@ -1,0 +1,87 @@
+<div class="container">
+    <div class="row mt-5">
+      <div class="col-12">
+  <link rel="stylesheet" href="../../../assets/css/list-equipamentos.css">
+  <link rel="stylesheet" href="../../../assets/css/bootstrap.css">
+  
+      
+      <!--- Continuação da tabela -->
+      <div class="container">
+  
+        
+          <table class="table table-bordered shadow"> 
+            
+            <!--- coluna principal -->
+              <thead>
+                <tr>
+                  <th scope="col">SALA</th>
+                  <th scope="col">CODIGO DO EQUIPAMENTO</th>
+                  <th scope="col">TIPO DO EQUIPAMENTO</th>
+                  <th scope="col">DESCRIÇÃO</th>
+                  <th scope="col">N DO CHAMADO</th>
+                  <th scope="col">AJUSTES</th>
+                </tr>
+              </thead>
+      
+      
+              <!--- Primeiro Coluna -->
+              <div>
+                <tr>
+                  <th scope="row">12</th>
+                  <td>36182--2123</td>
+                  <td>COMPUTADOR</td>
+                  <td>...</td>
+                  <td> 10 </td>
+                  <div class=" item">
+      
+                    <!-- botão alterar -->
+                  <td><button type="button" class="edit btn bg-success" data-toggle="modal" data-target="#modal"> <img src="../../../assets/img/verifica.png" alt=""> 
+                  </button>
+                  <div class="modal" id="modal" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Concluir</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p>Deseja realmente finalizar o chamado deste equipamento?</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn bg-danger" data-dismiss="modal">Não</button>
+                          <button type="button" class="btn bg-success">Sim</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+      
+      
+                            <!-- botão visualizar -->
+                <button type="button" class="visualizar btn btn-primary" data-toggle="modal" data-target="#modalExemplo1"> <img src="../../../assets/img/olho.png" alt=""></button>
+      
+                <!-- Modal visualizar -->
+                <div class="modal fade" id="modalExemplo1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Equipamento</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </td>
+                  </div>
+                </tr>  
+              </div>
+            </div>
+              </div>
+                <script src="assets/js/bootstrap.js"></script>

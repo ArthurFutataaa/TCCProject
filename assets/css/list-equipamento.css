@@ -1,0 +1,13 @@
+.table {
+    margin-top: 30vh;
+    text-align: center;
+};
+
+.botao{
+    display: inline-block;
+};
+
+
+.item {
+    margin: left;
+}

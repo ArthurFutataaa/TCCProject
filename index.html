@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>SGETEL</title>
+</head>
+<body>
+    
+    <!-- Navbar-->
+
+    <div class="container-fluid">
+    <div class="row">
+    <nav class="menu-lateral col-3 col-md-3">
+
+        <!--Div responsavel pelo burguer-->
+        <div class="btn-expandir">
+            <i class="bi bi-text-indent-right" id="btn-expandir"></i>
+        </div>
+
+        <!--Lista ordenada-->
+        <ul>
+
+            <!--1 icone--> 
+            <li class="item-menu ativo"> <!-- Class ativo faz com que a Home ja fique selecionada de acordo com o JS-->
+                <a class="item"  href="#">
+                    <span class="icon"><i class="bi bi-houses"></i></span> <!--Responsavel por guardar icones do nosso menu-->
+                    <span class="txt-link">Home</span> <!--Caixa de texto do menu-->
+                </a>
+            </li>
+
+            <!--2 Icone-->
+            <li class="item-menu">
+                <a class="item"  href="src/views/equipamento/list-equipamento.html">
+                    <span class="icon"><i class="bi bi-pc-display"></i></span> <!--Responsavel por guardar icones do nosso menu-->
+                    <span class="txt-link">Equipamentos</span> <!--Caixa de texto do menu-->
+                </a>
+            </li>
+
+            <!--3 Icone-->
+            <li class="item-menu">
+                <a class="item"  href="src/views/usuario/list-usuario.html">
+                    <span class="icon"><i class="bi bi-people"></i></span> <!--Responsavel por guardar icones do nosso menu-->
+                    <span class="txt-link">Usuários</span> <!--Caixa de texto do menu-->
+                </a>
+            </li>
+
+            <!--4 Icone-->
+            <li class="item-menu">
+                <a class="item" href="src/views/Manutenção/list-manutenção.html">
+                    <span class="icon"><i class="bi bi-menu-app-fill"></i></span> <!--Responsavel por guardar icones do nosso menu-->
+                    <span class="txt-link">Manutenção</span> <!--Caixa de texto do menu-->
+                </a>
+            </li>
+            
+            <!--5 Icone-->
+            <li class="item-menu">
+                <a class="item" href="src/views/Informações/informações.html">
+                    <span class="icon"><i class="bi bi-info-square-fill"></i></span> <!--Responsavel por guardar icones do nosso menu-->
+                    <span class="txt-link">Informações</span> <!--Caixa de texto do menu-->
+                </a>
+            </li>
+
+            <!--6 Icone-->
+            <li class="item-menu">
+                <a class="item" href="#">
+                    <span class="icon"><i class="bi bi-door-open"></i></span> <!--Responsavel por guardar icones do nosso menu-->
+                    <span class="txt-link">Login</span> <!--Caixa de texto do menu-->
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div><!--Div da Row-->
+</div><!--Div do Container-->
+
+<!--Carregando as outras paginas para dentro da index-->
+    <div id="content">
+
+    </div>
+
+    
+                                                    <!--Fim sidebar-->
+
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/jquery-3.6.4.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/sidebar.js"></script>
+</body>
+</html>
